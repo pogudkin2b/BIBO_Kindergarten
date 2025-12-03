@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useI18n } from '@/lib/i18n';
 
 const images = [
-  { src: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=400&fit=crop', alt: 'Children playing' },
-  { src: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop', alt: 'Art class' },
-  { src: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&h=400&fit=crop', alt: 'Outdoor activities' },
-  { src: 'https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=600&h=400&fit=crop', alt: 'Learning together' },
-  { src: 'https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=600&h=400&fit=crop', alt: 'Creative play' },
-  { src: 'https://images.unsplash.com/photo-1595959183082-7b570b7e1dfa?w=600&h=400&fit=crop', alt: 'Music time' },
+  { src: '/images/наша жизнь/509602516_10022649514454643_8556444660979512373_n.webp', alt: 'Дети в детском саду БИБО' },
+  { src: '/images/наша жизнь/499369044_10093078867411707_7215628561690900272_n.webp', alt: 'Творческие занятия' },
+  { src: '/images/наша жизнь/481467813_1155250146300485_4921002663492483248_n.webp', alt: 'Игры и развитие' },
+  { src: '/images/наша жизнь/480392934_1149045713587595_2892048886258677518_n.webp', alt: 'Активности в саду' },
+  { src: '/images/наша жизнь/473785110_1126943559131144_228129965593422881_n.webp', alt: 'Обучение и игры' },
+  { src: '/images/наша жизнь/473200074_1124220029403497_2493343347242294360_n.webp', alt: 'Наши дети' },
 ];
 
 export default function Gallery() {
@@ -175,7 +175,7 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={images[selectedImage].src.replace('w=600&h=400', 'w=1400&h=1000')}
+                src={images[selectedImage].src}
                 alt={images[selectedImage].alt}
                 className="max-w-full max-h-[85vh] rounded-2xl object-contain"
               />

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useI18n } from '@/lib/i18n';
-import WeeklyMenu from '@/components/WeeklyMenu';
+// import WeeklyMenu from '@/components/WeeklyMenu';
 
 export default function Nutrition() {
   const { t } = useI18n();
@@ -96,6 +96,7 @@ export default function Nutrition() {
         </div>
 
         {/* Нижняя секция - интерактивное меню */}
+        {/* Temporarily hidden - Weekly Menu Section
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -112,6 +113,7 @@ export default function Nutrition() {
           </div>
           <WeeklyMenu />
         </motion.div>
+        */}
       </div>
     </section>
   );
