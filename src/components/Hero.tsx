@@ -7,10 +7,10 @@ export default function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-cream pt-24 pb-12">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-mint-primary pt-24 pb-12">
       {/* Organic background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Large sage blob */}
+        {/* Large blue blob */}
         <motion.div
           animate={{
             borderRadius: [
@@ -21,9 +21,9 @@ export default function Hero() {
             ]
           }}
           transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-sage-light/40"
+          className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-blue-primary/30"
         />
-        {/* Peach blob */}
+        {/* Lavender blob */}
         <motion.div
           animate={{
             borderRadius: [
@@ -33,16 +33,16 @@ export default function Hero() {
             ]
           }}
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -bottom-48 -left-32 w-[600px] h-[600px] bg-peach/30"
+          className="absolute -bottom-48 -left-32 w-[600px] h-[600px] bg-lavender-accent/20"
         />
-        {/* Small terracotta accent */}
+        {/* Small yellow accent */}
         <motion.div
           animate={{ y: [0, -30, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-1/3 right-1/4 w-24 h-24 bg-terracotta-light/30 blob-1"
+          className="absolute top-1/3 right-1/4 w-24 h-24 bg-yellow-primary/40 blob-1"
         />
         {/* Decorative lines */}
-        <svg className="absolute top-20 left-10 w-32 h-32 text-sand opacity-60" viewBox="0 0 100 100">
+        <svg className="absolute top-20 left-10 w-32 h-32 text-blue-primary/50 opacity-60" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4 4" />
         </svg>
       </div>
@@ -61,10 +61,10 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="inline-flex items-center gap-3 px-5 py-2.5 bg-sand/80 backdrop-blur-sm rounded-full mb-8"
+              className="inline-flex items-center gap-3 px-5 py-2.5 bg-yellow-primary/30 backdrop-blur-sm rounded-full mb-8"
             >
-              <span className="w-2 h-2 bg-sage rounded-full animate-pulse" />
-              <span className="text-warm-gray text-sm font-medium tracking-wide">
+              <span className="w-2 h-2 bg-leaf-green rounded-full animate-pulse" />
+              <span className="text-text-secondary text-sm font-medium tracking-wide">
                 {t.hero.subtitle}
               </span>
             </motion.div>
@@ -74,11 +74,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.7 }}
-              className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 leading-[1.15]"
+              className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary mb-6 leading-[1.15]"
             >
               <span className="block">Русско-Английский</span>
               <span className="block">детский сад</span>
-              <span className="block text-terracotta italic font-normal">«БИБО»</span>
+              <span className="block text-wood-brown italic font-normal">«БИБО»</span>
             </motion.h1>
 
             {/* Description */}
@@ -86,7 +86,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-lg md:text-xl text-warm-gray mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+              className="text-lg md:text-xl text-text-secondary mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
               {t.hero.description}
             </motion.p>
@@ -102,7 +102,7 @@ export default function Hero() {
                 href="#contacts"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-charcoal hover:bg-charcoal/90 text-cream font-semibold rounded-full transition-all shadow-soft-lg"
+                className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-leaf-green hover:bg-leaf-green/90 text-white font-semibold rounded-full transition-all shadow-soft-lg"
               >
                 {t.hero.cta}
                 <motion.svg
@@ -122,7 +122,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-cream hover:bg-sand text-charcoal font-semibold rounded-full transition-all border-2 border-light-gray hover:border-sage"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white hover:bg-yellow-primary/20 text-text-primary font-semibold rounded-full transition-all border-2 border-yellow-primary/50 hover:border-yellow-primary"
               >
                 <svg className="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -142,14 +142,14 @@ export default function Hero() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="w-10 h-10 rounded-full border-2 border-cream bg-gradient-to-br from-sage to-sage-dark flex items-center justify-center text-cream text-xs font-bold"
+                    className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-leaf-green to-blue-primary flex items-center justify-center text-white text-xs font-bold"
                   >
                     {String.fromCharCode(64 + i)}
                   </div>
                 ))}
               </div>
-              <div className="text-sm text-warm-gray">
-                <span className="font-semibold text-charcoal">50+</span> happy families
+              <div className="text-sm text-text-secondary">
+                <span className="font-semibold text-text-primary">50+</span> happy families
               </div>
             </motion.div>
           </motion.div>
@@ -168,7 +168,7 @@ export default function Hero() {
                 <motion.div
                   animate={{ rotate: [0, 3, 0, -3, 0] }}
                   transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-                  className="absolute -inset-4 bg-gradient-to-br from-sage to-sage-light blob-1 opacity-60"
+                  className="absolute -inset-4 bg-gradient-to-br from-blue-primary to-lavender-accent blob-1 opacity-40"
                 />
 
                 {/* Image container */}
@@ -179,7 +179,7 @@ export default function Hero() {
                     className="w-full h-[450px] md:h-[550px] object-cover"
                   />
                   {/* Warm overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-terracotta/10 via-transparent to-sage/10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-peach-accent/10 via-transparent to-blue-primary/10" />
                 </div>
               </div>
 
@@ -189,17 +189,17 @@ export default function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.9, duration: 0.5 }}
                 whileHover={{ y: -5 }}
-                className="absolute -left-6 bottom-16 bg-cream rounded-3xl shadow-soft-lg p-5 border border-sand"
+                className="absolute -left-6 bottom-16 bg-white rounded-3xl shadow-soft-lg p-5 border border-yellow-primary/30"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-terracotta/10 rounded-2xl flex items-center justify-center">
-                    <svg className="w-7 h-7 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-14 h-14 bg-yellow-primary/20 rounded-2xl flex items-center justify-center">
+                    <svg className="w-7 h-7 text-wood-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <div className="font-display text-3xl text-charcoal">{t.pricing.price}</div>
-                    <div className="text-sm text-warm-gray">{t.pricing.currency}</div>
+                    <div className="font-display text-3xl text-text-primary">{t.pricing.price}</div>
+                    <div className="text-sm text-text-secondary">{t.pricing.currency}</div>
                   </div>
                 </div>
               </motion.div>
@@ -210,17 +210,17 @@ export default function Hero() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.1, duration: 0.5 }}
                 whileHover={{ y: -5 }}
-                className="absolute -right-6 top-8 bg-cream rounded-3xl shadow-soft-lg p-5 border border-sand"
+                className="absolute -right-6 top-8 bg-white rounded-3xl shadow-soft-lg p-5 border border-blue-primary/30"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-sage/10 rounded-2xl flex items-center justify-center">
-                    <svg className="w-7 h-7 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-14 h-14 bg-blue-primary/20 rounded-2xl flex items-center justify-center">
+                    <svg className="w-7 h-7 text-leaf-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <div className="font-display text-3xl text-charcoal">2–6</div>
-                    <div className="text-sm text-warm-gray">years old</div>
+                    <div className="font-display text-3xl text-text-primary">2–6</div>
+                    <div className="text-sm text-text-secondary">years old</div>
                   </div>
                 </div>
               </motion.div>
@@ -229,12 +229,12 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-8 left-1/4 w-6 h-6 bg-clay rounded-full opacity-60"
+                className="absolute -top-8 left-1/4 w-6 h-6 bg-yellow-primary rounded-full opacity-60"
               />
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                className="absolute bottom-4 right-1/4 w-4 h-4 bg-terracotta rounded-full opacity-40"
+                className="absolute bottom-4 right-1/4 w-4 h-4 bg-peach-accent rounded-full opacity-40"
               />
             </div>
           </motion.div>
@@ -246,7 +246,7 @@ export default function Hero() {
         <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
           <path
             d="M0 50C240 90 480 90 720 50C960 10 1200 10 1440 50V100H0V50Z"
-            fill="#F5E6D3"
+            fill="#FFFFFF"
           />
         </svg>
       </div>
@@ -263,12 +263,12 @@ export default function Hero() {
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-xs text-warm-gray tracking-widest uppercase">Scroll</span>
-          <div className="w-5 h-8 border-2 border-warm-gray/30 rounded-full flex justify-center pt-1.5">
+          <span className="text-xs text-text-secondary tracking-widest uppercase">Scroll</span>
+          <div className="w-5 h-8 border-2 border-text-secondary/30 rounded-full flex justify-center pt-1.5">
             <motion.div
               animate={{ y: [0, 8, 0], opacity: [1, 0.3, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-1 h-1 bg-terracotta rounded-full"
+              className="w-1 h-1 bg-leaf-green rounded-full"
             />
           </div>
         </motion.div>

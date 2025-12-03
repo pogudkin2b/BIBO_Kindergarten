@@ -18,7 +18,7 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-cream relative overflow-hidden">
+    <section id="gallery" className="py-24 md:py-32 bg-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-light-gray to-transparent" />
 
@@ -32,14 +32,14 @@ export default function Gallery() {
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16"
         >
           <div>
-            <span className="inline-block text-terracotta font-medium tracking-widest uppercase text-sm mb-4">
+            <span className="inline-block text-wood-brown font-medium tracking-widest uppercase text-sm mb-4">
               Moments
             </span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary">
               {t.gallery.title}
             </h2>
           </div>
-          <p className="text-warm-gray max-w-md leading-relaxed">
+          <p className="text-text-secondary max-w-md leading-relaxed">
             {t.gallery.subtitle}
           </p>
         </motion.div>
@@ -63,13 +63,13 @@ export default function Gallery() {
                 alt={images[0].alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-text-primary/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileHover={{ opacity: 1, y: 0 }}
                 className="absolute bottom-6 left-6 right-6"
               >
-                <span className="inline-block px-4 py-2 bg-cream/90 backdrop-blur-sm rounded-full text-charcoal text-sm font-medium">
+                <span className="inline-block px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full text-text-primary text-sm font-medium">
                   Daily adventures
                 </span>
               </motion.div>
@@ -95,7 +95,7 @@ export default function Gallery() {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-text-primary/0 group-hover:bg-text-primary/20 transition-colors duration-300" />
               </div>
             </motion.div>
           ))}
@@ -119,7 +119,7 @@ export default function Gallery() {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-text-primary/0 group-hover:bg-text-primary/20 transition-colors duration-300" />
               </div>
             </motion.div>
           ))}
@@ -139,7 +139,7 @@ export default function Gallery() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02, y: -3 }}
             whileTap={{ scale: 0.98 }}
-            className="group flex items-center gap-4 px-8 py-4 bg-charcoal hover:bg-charcoal/90 rounded-full transition-all shadow-soft-lg"
+            className="group flex items-center gap-4 px-8 py-4 bg-leaf-green hover:bg-leaf-green/90 rounded-full transition-all shadow-soft-lg"
           >
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 flex items-center justify-center">
               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -147,10 +147,10 @@ export default function Gallery() {
               </svg>
             </div>
             <div className="text-left">
-              <div className="text-cream font-semibold">@bibo.kindergarten</div>
-              <div className="text-cream/60 text-sm">Follow our daily stories</div>
+              <div className="text-white font-semibold">@bibo.kindergarten</div>
+              <div className="text-white/60 text-sm">Follow our daily stories</div>
             </div>
-            <svg className="w-5 h-5 text-cream/60 group-hover:text-cream transition-colors ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-white/60 group-hover:text-white transition-colors ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </motion.a>
@@ -164,7 +164,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-charcoal/95 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-text-primary/95 backdrop-blur-sm flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >
             <motion.div
@@ -181,9 +181,9 @@ export default function Gallery() {
               />
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute -top-4 -right-4 w-12 h-12 bg-cream rounded-full flex items-center justify-center shadow-soft-lg hover:scale-105 transition-transform"
+                className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-soft-lg hover:scale-105 transition-transform"
               >
-                <svg className="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
@@ -194,9 +194,9 @@ export default function Gallery() {
                   e.stopPropagation();
                   setSelectedImage(selectedImage > 0 ? selectedImage - 1 : images.length - 1);
                 }}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-cream/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-cream/40 transition-colors"
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/40 transition-colors"
               >
-                <svg className="w-6 h-6 text-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -205,9 +205,9 @@ export default function Gallery() {
                   e.stopPropagation();
                   setSelectedImage(selectedImage < images.length - 1 ? selectedImage + 1 : 0);
                 }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-cream/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-cream/40 transition-colors"
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/40 transition-colors"
               >
-                <svg className="w-6 h-6 text-cream" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -219,7 +219,7 @@ export default function Gallery() {
                     key={i}
                     onClick={(e) => { e.stopPropagation(); setSelectedImage(i); }}
                     className={`w-2 h-2 rounded-full transition-all ${
-                      i === selectedImage ? 'bg-cream w-6' : 'bg-cream/30 hover:bg-cream/50'
+                      i === selectedImage ? 'bg-white w-6' : 'bg-white/30 hover:bg-white/50'
                     }`}
                   />
                 ))}

@@ -45,7 +45,7 @@ export default function Header() {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-cream/95 backdrop-blur-md shadow-soft'
+          ? 'bg-white/95 backdrop-blur-md shadow-soft'
           : 'bg-transparent'
       }`}
     >
@@ -56,17 +56,17 @@ export default function Header() {
             <motion.div
               whileHover={{ rotate: 10, scale: 1.1 }}
               transition={{ type: 'spring', stiffness: 400 }}
-              className="w-10 h-10 bg-sage rounded-blob flex items-center justify-center"
+              className="w-10 h-10 bg-leaf-green rounded-blob flex items-center justify-center"
             >
-              <svg className="w-5 h-5 text-cream" viewBox="0 0 24 24" fill="currentColor">
+              <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.85 0 3.58-.5 5.07-1.37-.48-.62-.83-1.32-1.07-2.07-.96.59-2.08.94-3.28.94-3.58 0-6.5-2.92-6.5-6.5S9.42 6.5 13 6.5c2.73 0 5.06 1.7 6.02 4.1.63-.11 1.28-.1 1.9.03C20.08 6.6 16.47 2 12 2zm1 5v4.41l3.29 3.29-1.41 1.41L11 12.41V7h2z"/>
               </svg>
             </motion.div>
             <div className="flex flex-col">
-              <span className="font-display text-xl md:text-2xl text-charcoal tracking-tight">
+              <span className="font-display text-xl md:text-2xl text-text-primary tracking-tight">
                 БИБО
               </span>
-              <span className="text-[10px] text-warm-gray tracking-widest uppercase hidden md:block">
+              <span className="text-[10px] text-text-secondary tracking-widest uppercase hidden md:block">
                 Детский сад
               </span>
             </div>
@@ -81,10 +81,10 @@ export default function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + index * 0.05 }}
                 onClick={() => scrollToSection(item.href)}
-                className="relative px-4 py-2 text-warm-gray hover:text-charcoal transition-colors text-sm font-medium group"
+                className="relative px-4 py-2 text-text-secondary hover:text-text-primary transition-colors text-sm font-medium group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-terracotta rounded-full transition-all duration-300 group-hover:w-4/5" />
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-wood-brown rounded-full transition-all duration-300 group-hover:w-4/5" />
               </motion.button>
             ))}
           </nav>
@@ -97,9 +97,9 @@ export default function Header() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center gap-2 px-3 py-2 rounded-full border-2 border-light-gray hover:border-sage transition-colors text-charcoal font-medium text-sm"
+                className="flex items-center gap-2 px-3 py-2 rounded-full border-2 border-blue-primary/30 hover:border-blue-primary transition-colors text-text-primary font-medium text-sm"
               >
-                <span className="w-5 h-5 rounded-full bg-sage-light flex items-center justify-center text-[10px] font-bold text-sage-dark">
+                <span className="w-5 h-5 rounded-full bg-blue-primary/30 flex items-center justify-center text-[10px] font-bold text-text-primary">
                   {locale.toUpperCase().charAt(0)}
                 </span>
                 {localeNames[locale]}
@@ -120,7 +120,7 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.95 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute right-0 mt-2 w-32 bg-cream rounded-2xl shadow-soft-lg border border-sand overflow-hidden"
+                    className="absolute right-0 mt-2 w-32 bg-white rounded-2xl shadow-soft-lg border border-blue-primary/20 overflow-hidden"
                   >
                     {locales.map((loc) => (
                       <button
@@ -153,7 +153,7 @@ export default function Header() {
               href="#contacts"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-terracotta hover:bg-terracotta-dark text-cream font-semibold text-sm rounded-full transition-colors shadow-soft"
+              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-leaf-green hover:bg-leaf-green/90 text-white font-semibold text-sm rounded-full transition-colors shadow-soft"
             >
               <span>{t.hero.cta}</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,9 +165,9 @@ export default function Header() {
             <motion.button
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden w-10 h-10 rounded-full bg-sand flex items-center justify-center"
+              className="lg:hidden w-10 h-10 rounded-full bg-yellow-primary/30 flex items-center justify-center"
             >
-              <svg className="w-5 h-5 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -187,7 +187,7 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-cream border-t border-sand"
+            className="lg:hidden bg-white border-t border-blue-primary/20"
           >
             <div className="max-w-7xl mx-auto px-6 py-6 space-y-1">
               {navItems.map((item, index) => (
@@ -197,7 +197,7 @@ export default function Header() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left py-3 px-4 rounded-xl text-charcoal hover:bg-sand transition-colors font-medium"
+                  className="block w-full text-left py-3 px-4 rounded-xl text-text-primary hover:bg-yellow-primary/20 transition-colors font-medium"
                 >
                   {item.label}
                 </motion.button>
@@ -207,7 +207,7 @@ export default function Header() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navItems.length * 0.05 }}
-                className="block w-full text-center py-4 mt-4 bg-terracotta text-cream font-semibold rounded-2xl"
+                className="block w-full text-center py-4 mt-4 bg-leaf-green text-white font-semibold rounded-2xl"
               >
                 {t.hero.cta}
               </motion.a>

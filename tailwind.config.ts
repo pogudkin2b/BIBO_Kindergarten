@@ -9,6 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // BIBO Brand Colors - Primary
+        'yellow-primary': '#F9E4A6',
+        'mint-primary': '#CDE8D4',
+        'blue-primary': '#A8D6F0',
+
+        // BIBO Brand Colors - Accent
+        'lavender-accent': '#D5C7F6',
+        'peach-accent': '#F7B9A6',
+
+        // BIBO Brand Colors - Deep tones
+        'wood-brown': '#A77952',
+        'leaf-green': '#8CCB78',
+
+        // Text colors
+        'text-primary': '#4A4A4A',
+        'text-secondary': '#6A6A6A',
+        'text-light': '#FFFFFF',
+
+        // Legacy colors for gradual migration (can be removed later)
         cream: '#FDF8F3',
         sand: '#F5E6D3',
         terracotta: {
