@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* BIBO Brand Colors - Primary */
-  --yellow-primary: #F9E4A6;
-  --mint-primary: #CDE8D4;
-  --blue-primary: #A8D6F0;
+  /* Fairy-Tale Palette */
+  --sunrise-lightest: #FFF4E0;
+  --sunrise-light: #FFE8B8;
+  --sunrise: #FFD88C;
+  --sunrise-accent: #FFC452;
 
-  /* BIBO Brand Colors - Accent */
-  --lavender-accent: #D5C7F6;
-  --peach-accent: #F7B9A6;
+  --meadow-lightest: #E8F5E9;
+  --meadow-light: #C8E6C9;
+  --meadow: #81C784;
+  --meadow-dark: #66BB6A;
 
-  /* BIBO Brand Colors - Deep tones */
-  --wood-brown: #A77952;
-  --leaf-green: #8CCB78;
+  --sky-lightest: #E3F2FD;
+  --sky-light: #BBDEFB;
+  --sky: #64B5F6;
+  --sky-dark: #42A5F5;
 
-  /* Text colors */
-  --text-primary: #4A4A4A;
-  --text-secondary: #6A6A6A;
-  --text-light: #FFFFFF;
+  --coral-lightest: #FFF3E0;
+  --coral-light: #FFCCBC;
+  --coral: #FF8A65;
+  --coral-dark: #FF7043;
 
-  /* Legacy colors (for gradual migration) */
-  --color-cream: #FDF8F3;
-  --color-sand: #F5E6D3;
-  --color-terracotta: #C67B5C;
-  --color-terracotta-dark: #A65D42;
-  --color-sage: #8B9A7D;
-  --color-sage-dark: #6B7A5D;
-  --color-sage-light: #B8C4AC;
-  --color-peach: #EACEBE;
-  --color-clay: #D4A574;
-  --color-charcoal: #2D2A26;
-  --color-warm-gray: #6B6560;
-  --color-light-gray: #E8E4DF;
+  --fairy-lightest: #F3E5F5;
+  --fairy-light: #E1BEE7;
+  --fairy: #BA68C8;
+  --fairy-dark: #AB47BC;
+
+  --cream: #FAF8F6;
+  --latte: #F5F1ED;
+  --cocoa-light: #8B7355;
+  --cocoa: #5D4E37;
+  --cocoa-dark: #3E3425;
 
   /* Typography */
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Quicksand', 'Comfortaa', sans-serif;
+  --font-body: 'Outfit', 'Nunito', system-ui, sans-serif;
 }
 
 * {
@@ -54,8 +54,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--color-charcoal);
-  background-color: var(--color-cream);
+  color: var(--cocoa);
+  background: linear-gradient(to bottom, var(--cream) 0%, var(--latte) 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

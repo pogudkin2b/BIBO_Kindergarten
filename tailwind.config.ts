@@ -9,64 +9,90 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // BIBO Brand Colors - Primary
-        'yellow-primary': '#F9E4A6',
-        'mint-primary': '#CDE8D4',
-        'blue-primary': '#A8D6F0',
-
-        // BIBO Brand Colors - Accent
-        'lavender-accent': '#D5C7F6',
-        'peach-accent': '#F7B9A6',
-
-        // BIBO Brand Colors - Deep tones
-        'wood-brown': '#A77952',
-        'leaf-green': '#8CCB78',
-
-        // Text colors
-        'text-primary': '#4A4A4A',
-        'text-secondary': '#6A6A6A',
-        'text-light': '#FFFFFF',
-
-        // Legacy colors for gradual migration (can be removed later)
-        cream: '#FDF8F3',
-        sand: '#F5E6D3',
-        terracotta: {
-          DEFAULT: '#C67B5C',
-          dark: '#A65D42',
-          light: '#D99B7F',
+        // Fairy-Tale Palette - Warm Sunrise
+        'sunrise': {
+          lightest: '#FFF4E0',
+          light: '#FFE8B8',
+          DEFAULT: '#FFD88C',
+          accent: '#FFC452',
         },
-        sage: {
-          DEFAULT: '#8B9A7D',
-          dark: '#6B7A5D',
-          light: '#B8C4AC',
-          lighter: '#D4DCC9',
+
+        // Meadow Green
+        'meadow': {
+          lightest: '#E8F5E9',
+          light: '#C8E6C9',
+          DEFAULT: '#81C784',
+          dark: '#66BB6A',
         },
-        peach: '#EACEBE',
-        clay: '#D4A574',
-        charcoal: '#2D2A26',
-        'warm-gray': '#6B6560',
-        'light-gray': '#E8E4DF',
+
+        // Sky Blue
+        'sky': {
+          lightest: '#E3F2FD',
+          light: '#BBDEFB',
+          DEFAULT: '#64B5F6',
+          dark: '#42A5F5',
+        },
+
+        // Coral Glow
+        'coral': {
+          lightest: '#FFF3E0',
+          light: '#FFCCBC',
+          DEFAULT: '#FF8A65',
+          dark: '#FF7043',
+        },
+
+        // Soft Lavender
+        'fairy': {
+          lightest: '#F3E5F5',
+          light: '#E1BEE7',
+          DEFAULT: '#BA68C8',
+          dark: '#AB47BC',
+        },
+
+        // Warm Neutrals
+        'cream': '#FAF8F6',
+        'latte': '#F5F1ED',
+        'cocoa': {
+          light: '#8B7355',
+          DEFAULT: '#5D4E37',
+          dark: '#3E3425',
+        },
+
+        // Pure
+        'pure': '#FFFFFF',
       },
       fontFamily: {
-        display: ['Fraunces', 'Georgia', 'serif'],
-        body: ['DM Sans', 'system-ui', 'sans-serif'],
+        display: ['Fredoka', 'Quicksand', 'Comfortaa', 'sans-serif'],
+        body: ['Outfit', 'Nunito', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         'blob': '60% 40% 30% 70% / 60% 30% 70% 40%',
+        'cloud': '30% 70% 70% 30% / 30% 30% 70% 70%',
+        'magic': '45% 55% 62% 38% / 42% 58% 42% 58%',
         '4xl': '2rem',
         '5xl': '2.5rem',
+        '6xl': '3rem',
       },
       boxShadow: {
-        'soft': '0 4px 6px -1px rgba(45, 42, 38, 0.05), 0 10px 20px -2px rgba(45, 42, 38, 0.08), 0 20px 40px -4px rgba(45, 42, 38, 0.06)',
-        'soft-lg': '0 10px 15px -3px rgba(45, 42, 38, 0.08), 0 20px 40px -4px rgba(45, 42, 38, 0.1), 0 40px 60px -8px rgba(45, 42, 38, 0.08)',
-        'inner-soft': 'inset 0 2px 4px 0 rgba(45, 42, 38, 0.05)',
+        'glow-sunrise': '0 0 20px rgba(255, 216, 140, 0.3), 0 0 40px rgba(255, 216, 140, 0.1)',
+        'glow-meadow': '0 0 20px rgba(129, 199, 132, 0.3), 0 0 40px rgba(129, 199, 132, 0.1)',
+        'glow-sky': '0 0 20px rgba(100, 181, 246, 0.3), 0 0 40px rgba(100, 181, 246, 0.1)',
+        'glow-coral': '0 0 20px rgba(255, 138, 101, 0.3), 0 0 40px rgba(255, 138, 101, 0.1)',
+        'fairy': '0 8px 32px rgba(93, 78, 55, 0.08), 0 2px 8px rgba(93, 78, 55, 0.04)',
+        'fairy-lg': '0 16px 48px rgba(93, 78, 55, 0.12), 0 4px 12px rgba(93, 78, 55, 0.06)',
+        'fairy-xl': '0 24px 64px rgba(93, 78, 55, 0.16), 0 8px 16px rgba(93, 78, 55, 0.08)',
+        'inner-glow': 'inset 0 2px 8px rgba(255, 255, 255, 0.3)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
         'blob': 'blob-morph 8s ease-in-out infinite',
         'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite',
         'fade-up': 'fadeUp 0.6s ease-out forwards',
         'scale-in': 'scaleIn 0.5s ease-out forwards',
+        'sparkle': 'sparkle 2s ease-in-out infinite',
+        'glow': 'glow 3s ease-in-out infinite',
+        'drift': 'drift 20s ease-in-out infinite',
       },
       keyframes: {
         float: {
@@ -90,6 +116,20 @@ const config: Config = {
         scaleIn: {
           '0%': { opacity: '0', transform: 'scale(0.9)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        sparkle: {
+          '0%, 100%': { opacity: '1', transform: 'scale(1) rotate(0deg)' },
+          '50%': { opacity: '0.4', transform: 'scale(0.8) rotate(180deg)' },
+        },
+        glow: {
+          '0%, 100%': { opacity: '0.5', filter: 'brightness(1)' },
+          '50%': { opacity: '1', filter: 'brightness(1.2)' },
+        },
+        drift: {
+          '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '25%': { transform: 'translate(20px, -20px) rotate(90deg)' },
+          '50%': { transform: 'translate(-10px, -40px) rotate(180deg)' },
+          '75%': { transform: 'translate(-30px, -10px) rotate(270deg)' },
         },
       },
       spacing: {
