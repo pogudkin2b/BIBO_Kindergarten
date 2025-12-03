@@ -51,14 +51,14 @@ const icons = {
 const advantageKeys = ['bilingual', 'yard', 'adaptation', 'schedule', 'themes', 'reports', 'meals', 'community'] as const;
 
 const cardStyles = [
-  { bg: 'bg-sage/10', iconBg: 'bg-sage', text: 'text-sage-dark' },
-  { bg: 'bg-clay/10', iconBg: 'bg-clay', text: 'text-clay' },
-  { bg: 'bg-terracotta/10', iconBg: 'bg-terracotta', text: 'text-terracotta-dark' },
-  { bg: 'bg-peach/30', iconBg: 'bg-peach', text: 'text-terracotta' },
-  { bg: 'bg-sage-light/30', iconBg: 'bg-sage-light', text: 'text-sage-dark' },
-  { bg: 'bg-terracotta-light/20', iconBg: 'bg-terracotta-light', text: 'text-terracotta-dark' },
-  { bg: 'bg-clay/10', iconBg: 'bg-clay', text: 'text-clay' },
-  { bg: 'bg-sage/10', iconBg: 'bg-sage', text: 'text-sage-dark' },
+  { bg: 'bg-leaf-green/10', iconBg: 'bg-leaf-green', text: 'text-leaf-green' },
+  { bg: 'bg-blue-primary/10', iconBg: 'bg-blue-primary', text: 'text-blue-primary' },
+  { bg: 'bg-yellow-primary/10', iconBg: 'bg-yellow-primary', text: 'text-wood-brown' },
+  { bg: 'bg-peach-accent/20', iconBg: 'bg-peach-accent', text: 'text-wood-brown' },
+  { bg: 'bg-lavender-accent/10', iconBg: 'bg-lavender-accent', text: 'text-wood-brown' },
+  { bg: 'bg-mint-primary/20', iconBg: 'bg-mint-primary', text: 'text-leaf-green' },
+  { bg: 'bg-blue-primary/10', iconBg: 'bg-blue-primary', text: 'text-blue-primary' },
+  { bg: 'bg-leaf-green/10', iconBg: 'bg-leaf-green', text: 'text-leaf-green' },
 ];
 
 export default function Advantages() {
@@ -67,11 +67,11 @@ export default function Advantages() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="advantages" className="py-24 md:py-32 bg-sand relative overflow-hidden">
+    <section id="advantages" className="py-24 md:py-32 bg-blue-primary/10 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-10 w-64 h-64 bg-cream rounded-full opacity-50 blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-80 h-80 bg-sage-lighter/30 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-10 w-64 h-64 bg-yellow-primary/30 rounded-full opacity-50 blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-mint-primary/40 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
@@ -88,14 +88,14 @@ export default function Advantages() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="inline-block text-terracotta font-medium tracking-widest uppercase text-sm mb-4"
+            className="inline-block text-wood-brown font-medium tracking-widest uppercase text-sm mb-4"
           >
             Why choose us
           </motion.span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary mb-6">
             {t.advantages.title}
           </h2>
-          <p className="text-lg text-warm-gray max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             {t.advantages.subtitle}
           </p>
         </motion.div>
@@ -118,7 +118,7 @@ export default function Advantages() {
                 }}
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
                 className={`
-                  group relative p-6 md:p-8 rounded-3xl bg-cream border border-sand
+                  group relative p-6 md:p-8 rounded-3xl bg-white border border-sand
                   hover:shadow-soft-lg transition-all duration-300 cursor-pointer
                   ${isLarge ? 'col-span-2 md:col-span-2' : 'col-span-1'}
                 `}
@@ -137,16 +137,16 @@ export default function Advantages() {
                   </motion.div>
 
                   {/* Content */}
-                  <h3 className="font-display text-xl md:text-2xl text-charcoal mb-3 leading-tight">
+                  <h3 className="font-display text-xl md:text-2xl text-text-primary mb-3 leading-tight">
                     {t.advantages.items[key].title}
                   </h3>
-                  <p className="text-warm-gray text-sm md:text-base leading-relaxed">
+                  <p className="text-text-secondary text-sm md:text-base leading-relaxed">
                     {t.advantages.items[key].description}
                   </p>
 
                   {/* Arrow indicator on hover */}
                   <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg className="w-5 h-5 text-charcoal/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-text-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
                     </svg>
                   </div>
@@ -164,11 +164,11 @@ export default function Advantages() {
           transition={{ delay: 0.5 }}
           className="flex justify-center mt-16"
         >
-          <div className="flex items-center gap-3 px-6 py-3 bg-cream rounded-full border border-light-gray">
+          <div className="flex items-center gap-3 px-6 py-3 bg-white rounded-full border border-light-gray">
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full bg-sage flex items-center justify-center text-cream text-xs">8</div>
             </div>
-            <span className="text-warm-gray text-sm">advantages for your child</span>
+            <span className="text-text-secondary text-sm">advantages for your child</span>
           </div>
         </motion.div>
       </div>

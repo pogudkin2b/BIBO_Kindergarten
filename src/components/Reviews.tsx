@@ -11,9 +11,9 @@ export default function Reviews() {
   const reviews = t.reviews.items;
 
   return (
-    <section id="reviews" className="py-24 md:py-32 bg-sand relative overflow-hidden">
+    <section id="reviews" className="py-24 md:py-32 bg-yellow-primary/10 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-cream rounded-full opacity-50 blur-3xl" />
+      <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full opacity-50 blur-3xl" />
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-sage/20 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
@@ -28,10 +28,10 @@ export default function Reviews() {
           <span className="inline-block text-terracotta font-medium tracking-widest uppercase text-sm mb-4">
             Testimonials
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary mb-6">
             {t.reviews.title}
           </h2>
-          <p className="text-lg text-warm-gray max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             {t.reviews.subtitle}
           </p>
         </motion.div>
@@ -46,7 +46,7 @@ export default function Reviews() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="bg-cream rounded-3xl p-8 md:p-12 relative shadow-soft-lg border border-sand"
+              className="bg-white rounded-3xl p-8 md:p-12 relative shadow-soft-lg border border-sand"
             >
               {/* Quote icon */}
               <div className="absolute top-8 left-8 text-sage/30">
@@ -56,7 +56,7 @@ export default function Reviews() {
               </div>
 
               <div className="relative z-10">
-                <p className="text-xl md:text-2xl text-charcoal mb-8 leading-relaxed font-light">
+                <p className="text-xl md:text-2xl text-text-primary mb-8 leading-relaxed font-light">
                   &ldquo;{reviews[activeIndex].text}&rdquo;
                 </p>
 
@@ -65,10 +65,10 @@ export default function Reviews() {
                     {reviews[activeIndex].author.charAt(0)}
                   </div>
                   <div>
-                    <div className="font-display text-lg text-charcoal">
+                    <div className="font-display text-lg text-text-primary">
                       {reviews[activeIndex].author}
                     </div>
-                    <div className="text-warm-gray">
+                    <div className="text-text-secondary">
                       {reviews[activeIndex].role}
                     </div>
                   </div>
@@ -106,9 +106,9 @@ export default function Reviews() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveIndex(activeIndex > 0 ? activeIndex - 1 : reviews.length - 1)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 w-12 h-12 bg-cream rounded-full shadow-soft-lg flex items-center justify-center hover:bg-sand transition-colors border border-sand"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-16 w-12 h-12 bg-white rounded-full shadow-soft-lg flex items-center justify-center hover:bg-yellow-primary/10 transition-colors border border-sand"
           >
-            <svg className="w-5 h-5 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </motion.button>
@@ -116,9 +116,9 @@ export default function Reviews() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveIndex(activeIndex < reviews.length - 1 ? activeIndex + 1 : 0)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 w-12 h-12 bg-cream rounded-full shadow-soft-lg flex items-center justify-center hover:bg-sand transition-colors border border-sand"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-16 w-12 h-12 bg-white rounded-full shadow-soft-lg flex items-center justify-center hover:bg-yellow-primary/10 transition-colors border border-sand"
           >
-            <svg className="w-5 h-5 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </motion.button>

@@ -7,7 +7,7 @@ export default function Pricing() {
   const { t } = useI18n();
 
   return (
-    <section id="pricing" className="py-24 md:py-32 bg-cream relative overflow-hidden">
+    <section id="pricing" className="py-24 md:py-32 bg-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-64 h-64 bg-sage/20 rounded-full blur-3xl" />
       <div className="absolute -right-32 bottom-0 w-96 h-96 bg-terracotta/10 rounded-full blur-3xl" />
@@ -24,10 +24,10 @@ export default function Pricing() {
           <span className="inline-block text-terracotta font-medium tracking-widest uppercase text-sm mb-4">
             Investment
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary mb-6">
             {t.pricing.title}
           </h2>
-          <p className="text-lg text-warm-gray max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             {t.pricing.subtitle}
           </p>
         </motion.div>
@@ -40,11 +40,11 @@ export default function Pricing() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto"
         >
-          <div className="bg-sand rounded-4xl shadow-soft-lg overflow-hidden border border-sand">
+          <div className="bg-yellow-primary/10 rounded-4xl shadow-soft-lg overflow-hidden border border-sand">
             {/* Price header */}
             <div className="bg-gradient-to-r from-sage to-sage-dark px-8 py-12 text-center text-cream relative overflow-hidden">
               {/* Decorative blob */}
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-cream/10 rounded-full blur-2xl" />
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
               <div className="relative">
                 <div className="text-lg font-medium opacity-90 mb-2">Monthly fee</div>
                 <div className="flex items-baseline justify-center gap-2">
@@ -55,8 +55,8 @@ export default function Pricing() {
             </div>
 
             {/* Features */}
-            <div className="p-8 md:p-12 bg-cream">
-              <h3 className="font-display text-2xl text-charcoal mb-6">
+            <div className="p-8 md:p-12 bg-white">
+              <h3 className="font-display text-2xl text-text-primary mb-6">
                 {t.pricing.included.title}
               </h3>
 
@@ -75,7 +75,7 @@ export default function Pricing() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-charcoal">{item}</span>
+                    <span className="text-text-primary">{item}</span>
                   </motion.li>
                 ))}
               </ul>

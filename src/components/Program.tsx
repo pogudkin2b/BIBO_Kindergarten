@@ -40,7 +40,7 @@ export default function Program() {
   const { t } = useI18n();
 
   return (
-    <section id="program" className="py-24 md:py-32 bg-sand relative overflow-hidden">
+    <section id="program" className="py-24 md:py-32 bg-yellow-primary/10 relative overflow-hidden">
       {/* Wave divider top */}
       <div className="absolute top-0 left-0 right-0">
         <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
@@ -60,10 +60,10 @@ export default function Program() {
           <span className="inline-block text-terracotta font-medium tracking-widest uppercase text-sm mb-4">
             Education
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary mb-6">
             {t.program.title}
           </h2>
-          <p className="text-lg text-warm-gray max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             {t.program.subtitle}
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export default function Program() {
           >
             <div className="bg-sage rounded-3xl p-8 text-cream h-full flex flex-col justify-between">
               <div>
-                <div className="w-16 h-16 bg-cream/20 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -105,8 +105,8 @@ export default function Program() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="lg:col-span-4"
           >
-            <div className="bg-cream rounded-3xl p-8 border border-sand h-full">
-              <h3 className="font-display text-2xl text-charcoal mb-6">
+            <div className="bg-white rounded-3xl p-8 border border-sand h-full">
+              <h3 className="font-display text-2xl text-text-primary mb-6">
                 {t.program.included.title}
               </h3>
               <ul className="space-y-4">
@@ -124,7 +124,7 @@ export default function Program() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-charcoal">{item}</span>
+                    <span className="text-text-primary">{item}</span>
                   </motion.li>
                 ))}
               </ul>
@@ -140,7 +140,7 @@ export default function Program() {
             className="lg:col-span-4"
           >
             <div className="bg-terracotta/10 rounded-3xl p-8 h-full">
-              <h3 className="font-display text-2xl text-charcoal mb-6">
+              <h3 className="font-display text-2xl text-text-primary mb-6">
                 {t.program.extra.title}
               </h3>
               <div className="grid grid-cols-2 gap-3">
@@ -152,12 +152,12 @@ export default function Program() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: 0.3 + index * 0.05 }}
                     whileHover={{ y: -3 }}
-                    className="bg-cream rounded-xl p-3 flex items-center gap-2 shadow-soft cursor-pointer hover:shadow-soft-lg transition-all"
+                    className="bg-white rounded-xl p-3 flex items-center gap-2 shadow-soft cursor-pointer hover:shadow-soft-lg transition-all"
                   >
                     <div className="w-9 h-9 bg-terracotta/10 rounded-lg flex items-center justify-center text-terracotta flex-shrink-0">
                       {extraIcons[item.icon]}
                     </div>
-                    <span className="text-sm font-medium text-charcoal truncate">{item.name}</span>
+                    <span className="text-sm font-medium text-text-primary truncate">{item.name}</span>
                   </motion.div>
                 ))}
               </div>
