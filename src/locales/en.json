@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "about": "About",
+    "program": "Program",
+    "gallery": "Gallery",
+    "nutrition": "Nutrition",
+    "reviews": "Reviews",
+    "pricing": "Pricing",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Russian-English Kindergarten BIBO in Tbilisi",
+    "subtitle": "Since 1985",
+    "description": "Nurturing with love since 1985: warm family atmosphere, private green area, and developmental program with focus on English language.",
+    "cta": "Book a Tour",
+    "whatsapp": "Message on WhatsApp"
+  },
+  "advantages": {
+    "title": "Why Parents Choose BIBO",
+    "subtitle": "Over 35 years of experience, family atmosphere, and everything needed for harmonious child development",
+    "items": {
+      "bilingual": {
+        "title": "Since 1985",
+        "description": "Over 35 years of experience, established system, and reputation as a family kindergarten"
+      },
+      "yard": {
+        "title": "Private Green Area",
+        "description": "Fenced yard with natural surface and sandbox — children play safely"
+      },
+      "adaptation": {
+        "title": "Warm, Family Atmosphere",
+        "description": "Teachers know each child, lots of attention, care, and genuine interaction"
+      },
+      "schedule": {
+        "title": "Russian-English Environment",
+        "description": "English language is integrated into daily life: games, songs, activities"
+      },
+      "themes": {
+        "title": "Small Groups",
+        "description": "Children don't get lost in the crowd, everyone gets enough attention"
+      },
+      "reports": {
+        "title": "Developmental Program",
+        "description": "Music, dance, creativity, sports, and school preparation — confident start for first-graders"
+      },
+      "meals": {
+        "title": "3 Balanced Meals",
+        "description": "Home-cooked food, thoughtful menu, and comfortable mealtimes"
+      },
+      "community": {
+        "title": "Nap Time by Choice",
+        "description": "Comfortable beds on the second floor, children can nap if tired"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Our Life",
+    "subtitle": "Every day is filled with joy, discoveries, and care"
+  },
+  "program": {
+    "title": "BIBO Developmental Program",
+    "subtitle": "Development through play and creativity — English language, music, dance, school preparation",
+    "age": {
+      "title": "Age",
+      "value": "2 to 6 years old"
+    },
+    "included": {
+      "title": "What's Included in Program",
+      "items": [
+        "English — games, rhymes, songs",
+        "Music — developing ear, rhythm, and confidence",
+        "Dance and movement — plasticity and coordination",
+        "Creativity — drawing, crafts, theater",
+        "School preparation — attention, memory, logic",
+        "Outdoor walks and games with sandbox"
+      ]
+    },
+    "extra": {
+      "title": "Additional Classes (Optional)",
+      "items": [
+        { "name": "Ballet", "icon": "ballet" },
+        { "name": "Karate", "icon": "karate" },
+        { "name": "Yoga", "icon": "yoga" },
+        { "name": "Swimming", "icon": "swimming" },
+        { "name": "English", "icon": "english" },
+        { "name": "Singing", "icon": "singing" }
+      ]
+    }
+  },
+  "nutrition": {
+    "title": "Nutrition",
+    "subtitle": "Delicious and healthy — like home",
+    "description": "Menu is designed according to children's age-specific needs. We cook from fresh ingredients every day.",
+    "menuUpdate": "Menu is updated weekly",
+    "downloadMenu": "Download sample menu (PDF)"
+  },
+  "reviews": {
+    "title": "Parent Reviews",
+    "subtitle": "What parents say about BIBO",
+    "items": [
+      {
+        "text": "My daughter (3 years) attended BIBO for 3 months. She adapted quickly thanks to attentive and professional teachers. Small groups, delicious food, walks in own yard, nap if child wants. Children do music, dance, theater. Special thanks to Luiza, Maya and Eka!",
+        "author": "Marina Lobanova",
+        "role": "mom of daughter, 3 years old"
+      },
+      {
+        "text": "We've been going to BIBO for less than a month, but my review matured in the first days. Very pleasant, soulful, cozy place for kids. Great menu, lots of space for games, cozy sleeping places on second floor. Closed yard with natural surface. There's a sandbox (so rare in Tbilisi). The staff's attitude to children is amazing: so much attention, care, love. It's something from childhood, something from grandma's house. My son (1 year 9 months) really wants to go there every day.",
+        "author": "Polina Mamedova",
+        "role": "mom of son, 1 year 9 months"
+      },
+      {
+        "text": "The kindergarten is 35 years old. Wonderful attitude to children. Russian-speaking children attend. I'm delighted with the garden. There's English, dance, music, sports. At the time of writing the review 500 lari/month — the lowest price compared to other gardens. Has own fenced playground for walks. Daytime sleep by choice — good beds on 2nd floor. I recommend BIBO to everyone!!!",
+        "author": "Polina Pavlova",
+        "role": "satisfied parent"
+      },
+      {
+        "text": "BIBO Kindergarten is the place where I can leave my child and not worry about anything, knowing they will always be under the wing of caring nannies.",
+        "author": "Denis Stepanenko",
+        "role": "dad"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Affordable prices for a family kindergarten with experience",
+    "price": "500",
+    "currency": "GEL/month",
+    "included": {
+      "title": "What's Included",
+      "items": [
+        "Full day (08:30 — 19:00)",
+        "3 balanced meals a day",
+        "All developmental activities (English, music, dance)",
+        "Outdoor walks with sandbox",
+        "School preparation",
+        "Creative and sports activities"
+      ]
+    },
+    "note": "Additional classes (ballet, karate, swimming, etc.) are paid separately"
+  },
+  "contacts": {
+    "title": "BIBO Contacts",
+    "subtitle": "Come for a tour — we'll show you everything!",
+    "address": {
+      "title": "Address",
+      "value": "Tabidze Lane 1, 8, 0179, Georgia"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+995 577 71 23 51"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "value": "Message us"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "weekdays": "Mon-Fri: 08:30–19:00",
+      "weekend": "Sat-Sun: Closed"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "value": "@bibo.kindergarten"
+    },
+    "form": {
+      "title": "Book a Tour at BIBO",
+      "name": "Your name",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Request",
+      "success": "Thank you! We will contact you soon."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy"
+  }
+}
